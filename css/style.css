@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #B10A0A;
+  background: #24272E;
   font-family: 'Lato', sans-serif;
   position: relative;
   padding-bottom: 3em;
@@ -12,29 +12,43 @@ body {
 
 .header {
   height: 12vh; }
+  .header .nav-link {
+    margin: 0px 20px; }
   .header .nav-link:hover {
     background-color: rgba(32, 69, 75, 0.309); }
 
 .main .card {
   transition: transform 550ms; }
-
-.main .card:hover {
-  transform: translateY(2px); }
+  .main .card:hover {
+    transform: translateY(-8px); }
 
 .main .card-body:hover {
   background-color: rgba(32, 69, 75, 0.309); }
 
 .main .card-footer {
   margin-bottom: 10px; }
-
-.main .card-footer:hover {
-  background-color: rgba(25, 85, 99, 0.309);
-  border: #257605 solid 1px;
-  border-radius: 10px; }
+  .main .card-footer:hover {
+    background-color: rgba(25, 85, 99, 0.309);
+    border: #39af60 solid 1px;
+    border-radius: 10px; }
 
 .main .btn {
   height: 34px;
   line-height: 1; }
+
+.container__Menu {
+  padding-bottom: 20px; }
+
+.container__separador {
+  color: white;
+  font-size: 20px;
+  display: flex; }
+  .container__separador :hover {
+    color: #39af60; }
+
+.productosMenu {
+  display: flex;
+  width: 300px; }
 
 .divMapa {
   display: flex;
@@ -52,14 +66,17 @@ body {
     justify-content: center;
     align-items: center; }
 
+.boton:hover {
+  background-color: #39af60; }
+
 .footer {
+  height: 10vh;
   position: absolute;
   bottom: 0;
   width: 100%; }
-  .footer .footer__links {
+  .footer__links {
     display: flex;
     justify-content: center;
     list-style: none; }
-  .footer .footer__links li {
-    /* margin: 5px; */
+  .footer__links li {
     display: inline-block; }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #B10A0A;
+    background: #24272E;
     font-family: 'Lato', sans-serif;
     position: relative;
     padding-bottom: 3em;
@@ -13,36 +13,67 @@ body {
 }
 
 .header {
-    height: 12vh;
-    .nav-link:hover {
-        background-color: rgba(32, 69, 75, 0.309);
-
+height: 12vh;
+    .nav-link{
+        margin: 0px 20px;
     }
+    .nav-link:hover {
+background-color: rgba(32, 69, 75, 0.309);
+
+}
 }
 
+
+
+
+
 .main {
+    
     .card {
-        transition: transform 550ms;
         
+        transition: transform 550ms;
+        &:hover{
+            transform: translateY(-8px);
     }
-        .card:hover{
-            transform: translateY(2px);
-        }
+}
+        
     .card-body:hover{
         background-color: rgba(32, 69, 75, 0.309);
     }
     .card-footer {
         margin-bottom: 10px;
-    }
-        .card-footer:hover{
+        &:hover{
             background-color: rgba(25, 85, 99, 0.309);
-            border: rgb(37, 118, 5) solid 1px;
+            border: rgb(57, 175, 96) solid 1px;
             border-radius: 10px;
         }
+    }
+        
             .btn {
                 height: 34px;
                 line-height: 1;
         }
+    
+}
+
+.container__Menu {
+    padding-bottom: 20px;
+    
+}
+
+.container__separador {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    :hover{
+        color: rgb(57, 175, 96);
+    }
+}
+
+.productosMenu {
+    display: flex;
+    
+    width: 300px;
     
 }
 
@@ -68,17 +99,37 @@ body {
             
     }
 
+.boton:hover{
+    background-color: rgb(57, 175, 96);
+}
+
+
 .footer {
+    height: 10vh;
     position: absolute;
     bottom: 0;
     width: 100%;
-        .footer__links {
+    
+        &__links {
             display: flex;
             justify-content: center;
             list-style: none;
         }
-            .footer__links li {
-                /* margin: 5px; */
+        &__links li {
+                
                 display: inline-block;
-            }
+            } 
+
 }
+
+
+
+// @media (max-width: 700px) {
+//    header{
+//        flex-direction: column;
+//    }
+//     nav {
+//          padding: 10px 0px;
+//   }
+
+

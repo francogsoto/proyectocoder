@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pizzeria, empanadas, hamburguesas, comida rapida, delivery">
+    <meta name="description" content="Somos CoderBurger, las mejores hamburguesas y pizzas de la ciudad de Ensenada" />
     <!-- FAVICON -->
     <link rel="icon" href="../assets/images/favicon.png">
     <!-- FONT -->
@@ -20,13 +22,13 @@
 </head>
 
 <body>
-  <!-- -----NAV----- -->
+  <!-- NAVBAR -->
   <header class="header">
     <nav class="navbar navbar-expand-sm navbar-dark bg-success  ">
     <div class="container-fluid">
-        <a class="navbar-brand text-dark" href="../index.html">
-            <img src="https://place-hold.it/35x24?text=LOGO" alt="" width="35" height="24" class="rounded-circle d-inline-block align-text-top">
-            PROYECTO
+        <a class="navbar-brand text-dark fa-solid" href="../index.html">
+          <i class="fa-solid fa-burger m-2"></i>
+          BURGERCODER
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,14 +36,18 @@
         <div class="collapse navbar-collapse " id="menu">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-light rounded" href="../index.html">Inicio</a>
+                    <a class="nav-link text-light rounded" href="/index.html">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark bg-light rounded" href="./menu.html">Menu</a>
+                    <a class="nav-link text-dark bg-light rounded" href="./menu.html">MENU</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light  rounded" href="./contacto.html">Contacto</a>
+                    <a class="nav-link text-light  rounded" href="./contacto.html">CONTACTO</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-light rounded" href="./nosotros.html">NOSOTROS</a>
+              </li>
             </ul>
         </div>
     </div>
@@ -49,125 +55,194 @@
     </header>
     <!-- ----------------- -->
 
-    <!-- -----MENU-----  -->
-
 <main class="main container mt-3">
 
-    <div class="container border border-success mx-auto mt-3 mb-3 rounded bg-dark">
+    <div class="container border  mx-auto mt-5 mb-3 rounded bg-dark">
         <div class="text-center mt-3 text-light">
          <p>NUESTRO MENU</p> 
         </div>
       </div>
 
-
-<!-- -----CARRUSEL----- -->
-    <div id="carouselExampleDark" class="container-fluid carousel carousel-dark slide mb-5 mt-5 bg-success bg-gradient rounded" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner ">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../assets/images/imagen1.jpg" class="d-block w-25 rounded p-3" alt="...">
-            <div class="carousel-caption d-none d-md-block text-light ">
-              <h5>Nombre MENU</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, adipisci.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="../assets/images/imagen2.jpg" class="d-block w-25 rounded p-3" alt="...">
-            <div class="carousel-caption d-none d-md-block text-light">
-              <h5>Nombre MENU</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, adipisci.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/images/burger4.jpg" class="d-block w-25 rounded p-3" alt="...">
-            <div class="carousel-caption d-none d-md-block text-light">
-              <h5>Nombre MENU</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, adipisci.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     <!-- ----------------- -->
     
-
     <!-- -----MENU----- -->
 
 
-<div class="productosMenu container">
-    <div class="container row row-cols-1 row-cols-md-2 g-4 mb-4">
+<div class="container container__Menu">
+
+    <div class="container__separador">
+      <div class="mt-4">
+        <p class="lead">Hamburguesas</p> 
+      </div>
+    </div>  
+
+    <div class="row  g-4 mb-4">
+
         <div class="col">
-            <div class="card border-success bg-gradient">
-                <img src="../assets/images/burger2.jpg" class="card-img-top" alt="...">
+            <div class="card productosMenu border-success bg-gradient">
+                <img src="../assets/images/burger.jpg" class="card-img-top" alt="burger doble">
               <div class="card-body">
-                <h5 class="card-title">MENU</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, consectetur!</p>
+                <h5 class="card-title ">Burger Doble</h5>
+                <p class="card-text">Doble burger con queso doble, salsa especial, lechuga y tomate + aderezo</p>
               </div>
             </div>
           </div>
 
-        <div class="col">
-          <div class="card border-success bg-gradient">
-            <img src="../assets/images/burger.jpg" class="card-img-top" alt="...">
+          <div class="col">
+            <div class="card productosMenu border-success bg-gradient">
+                <img src="../assets/images/burger2.jpg" class="card-img-top" alt="burger simple">
+              <div class="card-body">
+                <h5 class="card-title">Burger Simple</h5>
+                <p class="card-text">Simple con cheddar + aderezo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card productosMenu border-success bg-gradient">
+                <img src="../assets/images/burger1.jpg" class="card-img-top" alt="burger especial">
+              <div class="card-body">
+                <h5 class="card-title">Burger Especial</h5>
+                <p class="card-text">Una burger con carne ahumada, huevo frito, queso doble y salsa especial</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card productosMenu border-success bg-gradient">
+                <img src="../assets/images/burger4.jpg" class="card-img-top" alt="burger pollo">
+              <div class="card-body">
+                <h5 class="card-title">Burger Pollo</h5>
+                <p class="card-text">Burger de pechuga de pollo con queso fundido, panceta, lechuga + aderezo</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    
+<!-- ------- -->
+    <div id="piem" class="container__separador">
+      <div class="mt-4">
+        <p>Pizzas & Empanadas</p> 
+       </div>
+    </div> 
+
+    <div class="row  g-4 mb-4">
+
+      <div class="col">
+          <div class="card productosMenu border-success bg-gradient">
+              <img src="../assets/images/pizza2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">MENU</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis libero praesentium ipsam quia quod impedit vel, exercitationem nesciunt quis?</p>
+              <h5 class="card-title">Pizza Pepperoni</h5>
+              <p class="card-text">Mozzarella, tomate y mucho pepperoni!</p>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <div class="card border-success bg-gradient">
-            <img src="../assets/images/burger3.jpg" class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">MENU</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis.</p>
+          <div class="card productosMenu border-success bg-gradient">
+              <img src="../assets/images/pizza.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza 4 Quesos</h5>
+              <p class="card-text">Ideal para los amantes del queso. Queso Crema, Mozzarella, Parmesano y Cheddar.</p>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <div class="card border-success bg-gradient">
-            <img src="../assets/images/imagen3.jpg" class="card-img-top" alt="...">
+          <div class="card productosMenu border-success bg-gradient">
+              <img src="../assets/images/empanada.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">MENU</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aliquid a reiciendis tempore sint sed aliquam dolor velit dolores facere!</p>
+              <h5 class="card-title">Empanadas</h5>
+              <p class="card-text">De carne (cortada a cuchillo, picada), jamon y queso, pollo. Picantes o suaves!</p>
             </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card productosMenu border-success bg-gradient">
+              <img src="../assets/images/empanada2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Empanadas veggies</h5>
+              <p class="card-text">Amplia variedad de empanadas de verdura, tambien veganas!</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  
+
+  <div id="postres" class="container__separador">
+    <div class="mt-4">
+      <p>Postres</p> 
+     </div>
+  </div> 
+
+  <div class="row  g-4 mb-4">
+
+    <div class="col">
+        <div class="card productosMenu border-success bg-gradient">
+            <img src="../assets/images/postre3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brownie</h5>
+            <p class="card-text">Brownie relleno bañado en chocolate blanco.</p>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="col">
+        <div class="card productosMenu border-success bg-gradient">
+            <img src="../assets/images/postre1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Postre de la casa</h5>
+            <p class="card-text">El postre de la casa, bien dulce, con dulce de leche, merengue y salsa tiramisu. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card productosMenu border-success bg-gradient">
+            <img src="../assets/images/postre2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cheesecake de chocolate</h5>
+            <p class="card-text">Cheesecake con masa de chocolate y frutillas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card productosMenu border-success bg-gradient">
+            <img src="../assets/images/postre4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tarta de frutilla</h5>
+            <p class="card-text">Tarta con abundantes frutillas bañada en crema y rellena de mousse.</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
 </main>
   <!-- ----------------- -->
 
   <!-- -----FOOTER----- -->
-  <footer class="footer border border-success container-fluid bg-dark text-center ">
-      <ul class="footer__links gap-3">
+  <footer class="footer border-top border-success container-fluid bg-dark text-center ">
+    <ul class="footer__links gap-3 mt-3">
         <li class="p-1 "><a href="https:/facebook.com"target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="p-1"><a href="https:/instagram.com"target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-    </li>
-    <li class="p-1"><a href="https:/whatsapp.com"target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-  </li>
-      </ul>
-  </footer>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+        </li>
+        <li class="p-1"><a href="https:/instagram.com"target="_blank">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+        </li>
+        <li class="p-1"><a href="https:/whatsapp.com"target="_blank">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
   <!-- ----------------- --> 
   
     <!-- LINK JS -->
